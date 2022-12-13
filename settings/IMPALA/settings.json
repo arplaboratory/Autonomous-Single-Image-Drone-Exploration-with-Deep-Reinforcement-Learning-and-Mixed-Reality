@@ -1,0 +1,65 @@
+{
+    "sensor_settings":
+    {
+      "RGBCamera": {
+            "width"   : 84,
+            "height"  : 84,
+            "channels": "RGB",
+            "FOV"     : 90,
+            "show"    : false
+      },
+
+      "GPS": {},
+
+      "Tracker": {
+            "FOV": 90,
+            "show": 0
+        },
+
+      "OccupancyGrid":{
+            "size_x": 70,
+            "show": 0
+      },
+      "Visibility": {
+            "start_angle_x"		: -45,
+            "end_angle_x"		: 45,
+            "distance_angle_x"	: 5,
+            "start_angle_y"		: 0,
+            "end_angle_y"		: 0,
+            "distance_angle_y"	: 10,
+            "cells_range"       : 3,
+            "laser_range"		: 120
+      }
+    },
+
+    "action_manager_settings":
+    {
+        "DiscreteActionManager": {
+                "command_dict": {
+                    "FORWARD"       : 0,
+                    "TURNL"         : 1,
+                    "TURNR"         : 2,
+                    "TURNRFORWARD"  : 3,
+                    "TURNLFORWARD"  : 4,
+                    "TURNRBACKWARD" : 5,
+                    "TURNLBACKWARD" : 6,
+                    "BACKWARD"      : 7,
+                    "IDLE"          : 8,
+                    "LEFT"          : 9,
+                    "RIGHT"         : 10
+                },
+                "settings": {
+                    "speed"         : 8,
+                    "rotation_speed": 8
+                }
+        }
+    },
+
+    "reset_manager_settings":
+    {
+        "EnvResetManager": {}
+    },
+
+    "observations_step" : ["RGBCamera", "GPS", "Visibility", "Tracker"],
+    "observations_reset": ["RGBCamera", "OccupancyGrid"]
+}

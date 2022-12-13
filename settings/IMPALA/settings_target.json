@@ -1,0 +1,32 @@
+{
+    "sensor_settings": {
+      "RGBCamera": {
+        "width": 84,
+        "height": 84,
+        "channels": "RGB",
+        "FOV": 90,
+        "show": false
+      },
+      "GPS": {}
+    },
+
+    "action_manager_settings":
+    {
+        "ContinuousActionManager": {
+                "command_dict": {
+                    "TURN": 0,
+                    "STRAIGHT": 1
+                },
+                "settings": {
+                }
+            }
+    },
+
+    "reset_manager_settings":
+    {
+        "EnvResetManager": {}
+    },
+
+    "observations_step" : ["RGBCamera", "GPS"],
+    "observations_reset": ["RGBCamera", "GPS"]
+}
