@@ -6,5 +6,5 @@ The source code will be soon available.
 If you use this code, please refer to our RA-L/ICRA 2022 paper:
 
 ```
-Soon available
+Devo, A., Mao, J., Costante, G., & Loianno, G. (2022). Autonomous Single-Image Drone Exploration With Deep Reinforcement Learning and Mixed Reality. IEEE Robotics and Automation Letters, 7(2), 5031-5038.
 ```
